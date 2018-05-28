@@ -40,6 +40,7 @@ def count_elements(array)
     end 
     found_hash = counting_arr.any? do |updated_hash|
       hash[:name] == updated_hash[:name]
+    end  
     counting_arr.push(hash) unless found_hash
   end 
   counting_arr
