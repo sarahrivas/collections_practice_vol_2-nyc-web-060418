@@ -42,4 +42,11 @@ def count_elements(array)
   word_counter
 end  
 
-def merge_data(keys, data)    
+def merge_data(keys, data)
+end  
+
+def find_cool(array)
+end  
+
+def organize_schools(schools)
+end   
