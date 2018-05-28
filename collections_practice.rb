@@ -47,10 +47,12 @@ def count_elements(array)
 end  
 
 def merge_data(keys, data)
-  merged_data = keys.merge(data) do |key, keys, data|
-    keys
-  end 
-  merged_data
+  keys.each do |hash|
+    first_name = hash[:first_name]
+  data.find do |bio_hash|
+    
+  end
+  end  
 end  
 
 def find_cool(array)
