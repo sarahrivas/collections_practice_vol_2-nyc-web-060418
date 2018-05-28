@@ -68,7 +68,11 @@ def organize_schools(schools)
   organized_schools = {}
   schools.each do |school, details|
     location = details[:location]
-    if location
-    organized_schools[location] = [school]
+    if organized_schools.key?(location)
+      organized_schools[location].push(school)
+    else 
+      organized_schools[location] = [school] 
+    end
   end  
+  organized_schools
 end   
