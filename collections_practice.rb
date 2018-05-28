@@ -36,9 +36,12 @@ def count_elements(array)
   counting_arr = []
   array.each do |hash|
     hash[:count] = array.count do |current_hash|
-      current_hash[:name] == hash[:name] 
-    end  
+      current_hash[:name] == hash[:name]
+    end 
     counting_arr.push(hash)
+    counting_arr.any? do |updated_hash|
+      if hash[:name] == 
+    
   end 
   counting_arr
 end  
