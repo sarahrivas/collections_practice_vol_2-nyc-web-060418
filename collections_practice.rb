@@ -35,7 +35,9 @@ end
 def count_elements(array)  
   word_counter = 0 
   array.each do |hash|
-    array.count()
+    array.count do |current_hash|
+      if current_hash.name == hash.name 
+    end  
   end 
   word_counter
 end  
