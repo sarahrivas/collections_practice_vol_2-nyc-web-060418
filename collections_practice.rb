@@ -47,12 +47,15 @@ def count_elements(array)
 end  
 
 def merge_data(keys, data)
+  merged_data = []
   keys.each do |hash|
     first_name = hash[:first_name]
-  data.find do |bio_hash|
-    
+  matching_hash = data.find do |bio_hash|
+    bio_hash.key?(first_name)
   end
+  merged_data(hash.merge(current_hash))
   end  
+  merged_data
 end  
 
 def find_cool(array)
