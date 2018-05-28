@@ -32,9 +32,9 @@ def remove_non_strings(array)
   string_only
 end  
     
-def count_elements(array, something)  
+def count_elements(array)  
   word_counter = 0 
-  array.each do |word, something|
+  array.each do |word|
     if word == something 
       word_counter += 1 
     end
