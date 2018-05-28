@@ -59,6 +59,7 @@ def merge_data(keys, data)
 end  
 
 def find_cool(array)
+  
 end  
 
 def organize_schools(schools)
