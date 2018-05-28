@@ -35,7 +35,7 @@ end
 def count_elements(array)  
   word_counter = 0 
   array.each do |word|
-    if word == something 
+    if word == 
       word_counter += 1 
     end
   end 
