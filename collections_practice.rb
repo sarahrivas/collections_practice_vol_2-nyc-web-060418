@@ -45,6 +45,7 @@ end
 def merge_data(arr1, arr2)
   arr1.merge(arr2) do |key|
     arr1
+  end  
 end  
 
 def find_cool(array)
