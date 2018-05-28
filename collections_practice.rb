@@ -43,7 +43,7 @@ def count_elements(array)
 end  
 
 def merge_data(keys, data)
-  merged_data = keys.merge(data) do |key|
+  merged_data = keys.merge(data) do |key, keys, data|
     keys
   end 
   merge_data
