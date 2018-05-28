@@ -59,7 +59,9 @@ def merge_data(keys, data)
 end  
 
 def find_cool(array)
-  
+  array.select do |person|
+    person[:temperature] == "cool"
+  end
 end  
 
 def organize_schools(schools)
