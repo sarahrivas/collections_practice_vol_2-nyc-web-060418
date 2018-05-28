@@ -38,9 +38,9 @@ def count_elements(array)
     hash[:count] = array.count do |current_hash|
       current_hash[:name] == hash[:name]
     end 
-    counting_arr.any? do |updated_hash|
-      if hash[:name] == 
-    counting_arr.push(hash)
+    found_hash = counting_arr.any? do |updated_hash|
+      hash[:name] == updated_hash[:name]
+    counting_arr.push(hash) unless found_hash
   end 
   counting_arr
 end  
