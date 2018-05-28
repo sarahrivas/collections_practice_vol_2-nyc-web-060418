@@ -42,10 +42,11 @@ def count_elements(array)
   word_counter
 end  
 
-def merge_data(arr1, arr2)
-  arr1.merge(arr2) do |key|
+def merge_data(keys, data)
+  merged_data = arr1.merge(arr2) do |key|
     arr1
-  end  
+  end 
+  merge_data
 end  
 
 def find_cool(array)
