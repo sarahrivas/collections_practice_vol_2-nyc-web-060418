@@ -32,4 +32,7 @@ def remove_non_strings(array)
   string_only
 end  
     
+def count_elements(array, word)  
+  word_counter = 0 
+  array.each do |word|
     
