@@ -41,4 +41,5 @@ def count_elements(array)
   end 
   word_counter
 end  
-    
+
+def merge_data(keys, data)    
