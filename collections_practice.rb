@@ -50,7 +50,7 @@ def merge_data(keys, data)
   merged_data = keys.merge(data) do |key, keys, data|
     keys
   end 
-  merge_data
+  merged_data
 end  
 
 def find_cool(array)
