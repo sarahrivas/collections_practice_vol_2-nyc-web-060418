@@ -53,7 +53,7 @@ def merge_data(keys, data)
   matching_hash = data.find do |bio_hash|
     bio_hash.key?(first_name)
   end
-  merged_data.push(hash.merge(matching_hash))
+  merged_data.push(hash.merge(matching_hash[first_name]))
   end  
   merged_data
 end  
