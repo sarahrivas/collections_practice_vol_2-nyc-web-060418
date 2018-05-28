@@ -23,6 +23,13 @@ end
 
 def remove_non_strings(array)
   string_only = []
-  
+  array.each do |word|
+    string_confirm = word.is_a(String)
+    if string_confirm
+      string_only.push(word)
+    end  
+  end  
+  string_only
+end  
     
     
