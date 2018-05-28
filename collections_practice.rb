@@ -33,13 +33,14 @@ def remove_non_strings(array)
 end  
     
 def count_elements(array)  
-  word_counter = 0 
+  counting_arr = []
   array.each do |hash|
-    name_count = array.count do |current_hash|
+    hash.count = array.count do |current_hash|
       current_hash.name == hash.name 
     end  
+    counting_arr.push(hash)
   end 
-  word_counter
+  counting_arr
 end  
 
 def merge_data(keys, data)
