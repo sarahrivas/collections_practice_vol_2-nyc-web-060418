@@ -67,6 +67,8 @@ end
 def organize_schools(schools)
   organized_schools = {}
   schools.each do |school, details|
-    location = [:details]
+    location = details[:location]
+    if location
+    organized_schools[location] = [school]
   end  
 end   
