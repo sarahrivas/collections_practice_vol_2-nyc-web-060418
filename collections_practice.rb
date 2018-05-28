@@ -42,7 +42,8 @@ def count_elements(array)
   word_counter
 end  
 
-def merge_data(keys, data)
+def merge_data(arr1, arr2)
+  arr1.merge(arr2)
 end  
 
 def find_cool(array)
